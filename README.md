@@ -190,3 +190,22 @@ ways:
 
 ## RESTful API Design Guidelines
 ### Designing RESTful web APIs
+#### Identifying resources in a problem domain
+
+#### Transforming operations to HTTP methods
+idempotent
+- An operation is called idempotent if multiple identical requests produce the same result. 
+- Similarly, an idempotent RESTful web API will always produce the same result 
+on the server irrespective of how many times the request is executed with the same parameters
+
+###### table
+  
+Method | Idempotent | Safe
+---|---|---
+GET|YES|YES
+OPTIONS|YES|YES
+HEAD|YES|YES
+POST|NO|NO
+PATCH|NO|NO
+PUT|YES|NO
+DELETE|YES|NO
