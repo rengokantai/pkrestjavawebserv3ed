@@ -36,8 +36,6 @@ JsonValue
 JsonObject
 ```
 
-
-
 ### JSON value types
 ```
 try(InputStream inputStream = getClass().getResourceAsStream(jsonFileName);
@@ -87,4 +85,9 @@ jsonWriter.writeArray(employeesArray);
 //Close the stream to clean up the associated resources 
 outputStream.close(); 
 jsonWriter.close(); 
+```
+#### Processing JSON with JSR 353 streaming APIs
+```
+javax.json.stream.JsonParser
+javax.json.stream.JsonGenerator
 ```
