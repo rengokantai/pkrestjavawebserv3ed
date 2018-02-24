@@ -35,3 +35,9 @@ JsonArray
 JsonValue
 JsonObject
 ```
+
+
+
+### JSON value types
+
+Once you have finished using the inputStream, outputStream, JsonReader, or JSonWriter objects, make sure that you close them to release the associated resources. The try-with-resources available from Java 1.7 is used to release resources automatically once the application stops. This is applicable only when the resource implements the java.lang.AutoCloseable interface.
