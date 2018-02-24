@@ -91,3 +91,42 @@ jsonWriter.close();
 javax.json.stream.JsonParser
 javax.json.stream.JsonGenerator
 ```
+
+
+## Introducing the JAX-RS API
+### JAX-RS annotations
+####　Specifying the dependency of the JAX-RS API
+```
+<dependency>
+    <groupId>javax.ws.rs</groupId>
+    <artifactId>javax.ws.rs-api</artifactId>
+    <version>2.1</version>
+</dependency>
+```
+####　Using JAX-RS annotations to build RESTful web services
+##### @Path
+###### Restricting values for path variables with regular expressions
+```
+@DELETE 
+@Path("{name: [a-zA-Z][a-zA-Z_0-9]}") 
+public void removeDepartmentByName(@PathParam("name")  
+  String deptName) { 
+    //Method implementation goes here 
+} 
+```
+
+
+#### Annotations for specifying request-response media types
+#### @Produces
+The possible internet media types that a REST API can produce are as follows:
+```
+application/atom+xml
+application/json
+application/octet-stream
+application/svg+xml
+application/xhtml+xml
+application/xml
+text/html
+text/plain
+text/xml
+```
