@@ -130,3 +130,63 @@ text/html
 text/plain
 text/xml
 ```
+example
+```
+import javax.ws.rs.Path; 
+import javax.ws.rs.Produces; 
+import javax.ws.rs.core.MediaType; 
+ 
+@Path("departments") 
+@Produces(MediaType.APPLICATION_JSON) 
+public class DepartmentService{ 
+  //Class implementation goes here...     
+} 
+```
+#### @Consumes
+Accept two more type of data.
+```
+multipart/form-data
+application/x-www-form-urlencoded
+```
+
+#### @HEAD
+The @javax.ws.rs.HEAD annotation designates a method to respond to the HTTP HEAD requests.
+The HEAD method is the same as the GET request, but it only transfers the status line along with the header section (without the response body) to the client.
+
+#### @OPTIONS
+This method is useful for obtaining a list of HTTP methods allowed for a resource.
+
+#### @PathParam
+#### @QueryParam
+
+
+
+
+
+
+
+
+
+## Securing RESTful Web Services
+ways:
+- HTTP basic authentication
+- HTTP digest authentication
+- JWT authentication
+- Securing RESTful web services with OAuth
+- Authorizing the RESTful web service accesses
+- Input validation
+- Best practices for securing RESTful services
+
+### Securing and authenticating web services
+
+### Building JAX-RS clients with basic authentication
+
+
+
+
+
+
+
+
+## RESTful API Design Guidelines
+### Designing RESTful web APIs
