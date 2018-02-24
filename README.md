@@ -28,3 +28,10 @@ JsonReader jsonReader = Json.createReader(reader);
 // Creates an object model in memory. 
 JsonArray employeeArray = jsonReader.readArray(); 
 ```
+
+know the relationship
+```
+JsonArray
+JsonValue
+JsonObject
+```
